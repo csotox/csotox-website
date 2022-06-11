@@ -1,0 +1,85 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+.container {
+    background: #000;
+    font-family: "calibri", 'Comic Sans';
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.card {
+    display: flex;
+    width: 600px;
+    height: auto;
+    background: #eee;
+    border-radius: 2px;
+    box-shadow: 5px 5px 4px 2px #444;
+}
+
+.card-image {
+    border-right: 1px solid #ddd;
+    text-align: center;
+    padding: 30px;
+}
+
+.card-text {
+    padding: 20px;
+}
+
+.card-image a {
+    position: relative;
+    display: block;
+}
+
+.card-image img {
+    box-shadow: 0 0 0 8px rgba(0, 0, 0, .06);
+    margin: 20px 30px;
+    transition: .2s;
+}
+
+.card-image a:hover img {
+    box-shadow: 0 0 0 12px rgba(0, 0, 0, .1);
+}
+
+.card-image h3 {
+    color: #F15412;
+}
+
+.card-image h5 {
+    margin-bottom: 20px;
+}
+
+.card-text {
+    position: relative;
+    text-align: center;
+}
+
+.card-text p {
+    margin: 20px 30px;
+}
+
+.card-social {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.card-social a {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.card-social a:hover i {
+    box-shadow: 0 0 0 12px rgba(0, 0, 0, .1);
+}
+
+@media (max-width:640px) {
+    .card { display: block; width: 95%; }
+
+    .card-image {
+        border-bottom: 1px solid #ddd;
+        padding: 20px 20px 5px 20px;
+    }
+}
